@@ -28,7 +28,8 @@ a = str("Hello World")  # same declaration
 ```
 
 ### Boolean
-Boolean in Python it's `True` or `False`. 
+Boolean variable is for manipulate boolean. Boolean it have two 
+possibilities `True` or `False`.
 >True is 1 False is 0.
 
 ```python
