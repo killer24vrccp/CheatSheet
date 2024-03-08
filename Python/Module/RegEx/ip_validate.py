@@ -1,8 +1,8 @@
 from colorama import Fore, Style
 import re
 
-info_color, info = (Fore.GREEN, "[!]")
-question_color, question = (Fore.BLUE, "[?]")
+info_color, info = (Fore.LIGHTGREEN_EX, "[!]")
+question_color, question = (Fore.LIGHTBLUE_EX, "[?]")
 invalid_color, invalid = (Fore.RED, "[^]")
 
 
@@ -11,7 +11,7 @@ def ip_validation(ip_address):
     if len(parts) == 4:
         for part in parts:
             if not part.isdigit() or int(part) < 0 or int(part) > 255:
-                return f"{invalid_color}{invalid}{Style.RESET_ALL} Invalid IP address"
+                return f"{invalid_color}{invalid}{Style.RESET_ALL} Invalid IP address\nMake sure you entered a valid IP address with the format: {Fore.RED}xxx.xxx.xxx.xxx!"
         return f"{info_color}{info}{Style.RESET_ALL} Valid IP address"
     else:
         return f"{invalid_color}{invalid}{Style.RESET_ALL} Invalid IP address\nMake sure you entered a valid IP address with the format: {Fore.RED}xxx.xxx.xxx.xxx!"
