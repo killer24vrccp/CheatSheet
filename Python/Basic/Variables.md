@@ -45,12 +45,58 @@ a = int(a)
 ```
 
 ### Float
+Float variable is for manipulate number by exemple `198.01`.
 
+```python
+a = 198.01
+a = float(198.01)  # same declaration
+```
 
 ### List
+List variable is for manipulation one list by exemple `['2', 'string']`
+We can store all variable type in the list in same variable.
 
+```pycon
+a = [1, 'string', True, 1.15, [1,2,3], {"var":"1"}]
+```
+
+#### Manipulation
+
+```python
+a = [2,7,8]
+print(a[2])
+
+output: 8
+```
 
 ### Dictionary
+Dictionary variable is for manipulation one Dict by exemple `{'myvar':'My Texte'}`
+We can store all variable type in the list in same variable.
 
+```pycon
+a = {
+    'First_var':'Hello',
+    'Second_Var':10,
+    'Third_Var':1.72,
+    'Four_Var':True,
+    'Five_Var':[1,4,8,2.51,{
+    'dev':'Ced',
+    'version':'v.1.0.1'
+    }]
+}
+```
 
+#### Manipulation
+
+```python
+a = {
+    'First_var':'Hello',
+    'Five_Var':[1,4,8,2.51,{
+    'dev':'Ced',
+    'version':'v.1.0.1'
+    }]
+}
+
+print(a['Five_Var'][0]['version'])
+```
 ### Tuple
