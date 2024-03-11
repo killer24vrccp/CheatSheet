@@ -6,6 +6,15 @@ Make sure the models dependence is present in  your `models.py`.
 from django.db import models
 ```
 
+How create a new model exemple:
+
+```python
+from django.db import models
+
+class MyModel(models.Model):
+    name = models.CharField(max_lenght=20)
+```
+
 ### Relationships
 
 #### OneToOneField 
@@ -23,3 +32,7 @@ author can have multiple entries. This would be represented as a ForeignKey.
 Used for a "many-to-many" relationship, where one object can be linked to several other objects, and those 
 objects can also be linked to several others. For example, in a blog application, an article could have 
 multiple authors, and each author could write multiple articles. This would be represented as a ManyToManyField.
+
+### No Relationships
+
+#### Charfield
